@@ -1,0 +1,18 @@
+meta {
+  name: Login.bru
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3212/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "akash@gmail.com",
+    "password": "Akash123"
+  }
+}
